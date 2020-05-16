@@ -1,0 +1,1 @@
+export interface ICar {  name: string;  photo: string;  price: string | number;  seatsCount: number;  doorsCount: number;  transmission: string;  year: number;}

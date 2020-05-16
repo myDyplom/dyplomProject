@@ -1,0 +1,47 @@
+<div class="item-1">
+  <a (click)="viewDetails()">
+    <img src="{{ data.photo }}" alt="Image" class="img-fluid" />
+  </a>
+  <div class="item-1-contents">
+    <div class="text-center">
+      <h3>
+        <a>{{ data.name }}</a>
+      </h3>
+      <div class="rating">
+        <span class="icon-star text-warning"></span>
+        <span class="icon-star text-warning"></span>
+        <span class="icon-star text-warning"></span>
+        <span class="icon-star text-warning"></span>
+        <span class="icon-star text-warning"></span>
+      </div>
+      <div class="rent-price">
+        <span>{{ data.price }}$</span>
+      </div>
+    </div>
+    <ul class="specs">
+      <li>
+        <span>Year</span>
+        <span class="spec">{{ data.year }}</span>
+      </li>
+      <li>
+        <span>Doors</span>
+        <span class="spec">{{ data.doorsCount }}</span>
+      </li>
+      <li>
+        <span>Seats</span>
+        <span class="spec">{{ data.seatsCount }}</span>
+      </li>
+      <li>
+        <span>Transmission</span>
+        <span class="spec">{{ data.transmission }}</span>
+      </li>
+      <li>
+        <span>Minium age</span>
+        <span class="spec">18 years</span>
+      </li>
+    </ul>
+    <div class="d-flex action">
+      <a class="btn btn-primary" (click)="viewDetails()">Details</a>
+    </div>
+  </div>
+</div>

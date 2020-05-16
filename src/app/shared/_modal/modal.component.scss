@@ -1,0 +1,119 @@
+/* MODAL STYLES
+-------------------------------*/
+app-modal {
+  /* modals are hidden by default */
+  display: none;
+
+  .jw-modal {
+    /* modal container fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+
+    /* z-index must be higher than .jw-modal-background */
+    z-index: 1000;
+
+    .jw-modal-body {
+      p {
+        padding: 0 20px;
+        font-size: 20px;
+        color: gray;
+      }
+
+      span {
+        margin-left: 250px;
+        font-size: 20px;
+        color: grey;
+      }
+
+      background: #fff;
+      border: 1px solid black;
+      width: 500px;
+      height: 361px;
+
+      /* margin exposes part of the modal background */
+      margin: 40px;
+    }
+
+    hr {
+      height: 1px;
+      margin-top: -12px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .jw-modal-background {
+    /* modal background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* semi-transparent black  */
+    background-color: #000;
+    opacity: 0.75;
+
+    /* z-index must be below .jw-modal and above everything else  */
+    z-index: 900;
+  }
+
+  .dialog-flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body.jw-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+  }
+
+  .exit-icon {
+    width: 29px;
+    height: 27px;
+    border: 1px solid cornflowerblue;
+    border-radius: 61%;
+    margin-top: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .dialog-rows p, span {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .dialog-rows{
+    margin-top: 33px;
+  }
+
+  .dialog-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 47px;
+
+    .btn-close {
+      width: 180px;
+      height: 37px;
+      font-size: 20px;
+      border: 1px solid silver;
+    }
+
+    .btn-ok {
+      width: 180px;
+      height: 37px;
+      font-size: 20px;
+      color: white;
+      background: black;
+      border: 1px solid white;
+    }
+  }
+}
